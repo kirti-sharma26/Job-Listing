@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Admin</title>
+</head>
+<body style="background-color: #e7d2cc;">
+ 
+    <div style="margin: 150px;">
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="name" style="color: #615d68;">Name</label>
+              <input type="text" class="form-control" name="name" id="name" aria-describedby="emailHelp" placeholder="Enter your name">
+            
+            </div> <br>
+
+            <div class="form-group">
+              <label for="dob" style="color: #615d68;">Date of Birth</label>
+              <input type="date" name="dob" class="form-control" id="dob" placeholder="DOB">
+            </div> <br>
+
+            <div class="form-group">
+                <label for="ten_marks" style="color: #615d68;">10th Marks</label>
+                <input type="number" name="ten_marks" class="form-control" id="ten_marks" placeholder="Enter 10th Marks">
+              </div> <br>
+
+              <div class="form-group">
+                <label for="twelve_marks" style="color: #615d68;">12th Marks</label>
+                <input type="number" class="form-control" id="twelve_marks" name="twelve_marks" placeholder="Enter your 12th Marks">
+              </div> <br>
+
+              <div class="form-group">
+                <label for="yoe" style="color: #615d68;">Years of Experience</label>
+                <input type="number" class="form-control" id="yoe" name="yoe" placeholder="Enter the years of experience">
+              </div> <br>
+
+
+            <a href="applied.html"><button type="submit" class="btn btn-primary" style="color: #868b8e; background-color: #eeede7; border-color: #eeede7;">Submit</button></a>
+          </form>
+          <br>
+          <br>
+    </div>
+
+
+
+
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+</body>
+</html>
